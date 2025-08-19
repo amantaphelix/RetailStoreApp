@@ -26,8 +26,8 @@ public class RetailStoreApp {
         // Use productCategoryResponse to display category results
 
         // 4. Sort products
-        // Pick comparator (priceAsc, priceDesc, nameAsc) and pass to sortProducts
-        ResponseDto<List<Product>> sortProductResponse = productController.sortProducts(null); // pass comparator
+        // User can choose sorting option  (Ascending, priceDescending,by name) and pass to sorting function
+        ResponseDto<List<Product>> sortProductResponse = productController.sorting("sortType");
         // Use sortProductResponse to display sorted list
     }
 }
