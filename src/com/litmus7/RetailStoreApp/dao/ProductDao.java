@@ -7,9 +7,6 @@ import java.util.List;
 
 public class ProductDao {
 
-    public ProductDao() {
-        // Constructor logic if needed
-    }
 
     public boolean saveProduct(Product product) throws ProductDaoException {
         // Step 1: Append product to CSV file.
